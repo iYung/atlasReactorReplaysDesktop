@@ -45,7 +45,7 @@ namespace atlasReactorReplaysDesktop
         public static void populateReplays(string targetDirectory, ListBox list)
         {
             string[] fileEntries = Directory.GetFiles(targetDirectory);
-            foreach (string fileName in fileEntries)
+            foreach (string fileName in fileEntries.Reverse())
             {
                 if (fileName.IndexOf(".arr") > 0)
                 {
@@ -58,11 +58,19 @@ namespace atlasReactorReplaysDesktop
         {
             string replay = listBox1.SelectedItem.ToString();
             IntPtr calculatorHandle = FindWindow("UnityWndClass", "Atlas Reactor");
-            //IntPtr calculatorHandle = FindWindow("Notepad", "Untitled - Notepad");
-            SetForegroundWindow(calculatorHandle);
-            InputSimulator.SimulateKeyDown(VirtualKeyCode.RETURN);
-            System.Threading.Thread.Sleep(100);
-            InputSimulator.SimulateTextEntry("/playreplay " + replay);
+            if (calculatorHandle != (IntPtr) 0)
+            {
+                SetForegroundWindow(calculatorHandle);
+                InputSimulator.SimulateKeyDown(VirtualKeyCode.RETURN);
+                InputSimulator.SimulateKeyUp(VirtualKeyCode.RETURN);
+                System.Threading.Thread.Sleep(100);
+                InputSimulator.SimulateTextEntry("/playreplay " + replay);
+                InputSimulator.SimulateKeyDown(VirtualKeyCode.RETURN);
+                InputSimulator.SimulateKeyUp(VirtualKeyCode.RETURN);
+            } else
+            {
+                MessageBox.Show("Please launch Atlas Reactor!");
+            }
         }
     }
 }

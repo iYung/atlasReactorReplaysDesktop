@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsInput;
 
 namespace atlasReactorReplaysDesktop
 {
@@ -56,8 +57,12 @@ namespace atlasReactorReplaysDesktop
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string replay = listBox1.SelectedItem.ToString();
-
-            
+            IntPtr calculatorHandle = FindWindow("UnityWndClass", "Atlas Reactor");
+            //IntPtr calculatorHandle = FindWindow("Notepad", "Untitled - Notepad");
+            SetForegroundWindow(calculatorHandle);
+            InputSimulator.SimulateKeyDown(VirtualKeyCode.RETURN);
+            System.Threading.Thread.Sleep(100);
+            InputSimulator.SimulateTextEntry("/playreplay " + replay);
         }
     }
 }

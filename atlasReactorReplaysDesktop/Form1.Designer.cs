@@ -82,9 +82,9 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 109);
+            this.listBox1.Location = new System.Drawing.Point(10, 99);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(460, 446);
+            this.listBox1.Size = new System.Drawing.Size(460, 459);
             this.listBox1.TabIndex = 4;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -99,6 +99,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Atlas Reactor Replays";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

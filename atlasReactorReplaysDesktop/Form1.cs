@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -56,6 +57,20 @@ namespace atlasReactorReplaysDesktop
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            /*
+            string replayText = System.IO.File.ReadAllText(@Properties.Settings.Default.path + "\\" + listBox1.SelectedItem.ToString());
+            MessageBox.Show(replayText);
+            */
+            using (StreamReader sr = new StreamReader(Properties.Settings.Default.path + "\\" + listBox1.SelectedItem.ToString()))
+            {
+                // Read the stream to a string, and write the string to the console.
+                String replayText = sr.ReadToEnd();
+                dynamic JSON = JsonConvert.DeserializeObject(replayText);
+                dynamic JSONgameConfig = JsonConvert.DeserializeObject((String)JSON.m_gameInfo_Serialized);
+                this.textBox1.Text = JSONgameConfig.GameConfig.Map;
+            }
+
+            /*
             string replay = listBox1.SelectedItem.ToString();
             IntPtr calculatorHandle = FindWindow("UnityWndClass", "Atlas Reactor");
             if (calculatorHandle != (IntPtr) 0)
@@ -71,6 +86,7 @@ namespace atlasReactorReplaysDesktop
             {
                 MessageBox.Show("Please launch Atlas Reactor!");
             }
+            */
         }
     }
 }

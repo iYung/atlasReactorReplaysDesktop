@@ -29,23 +29,25 @@ namespace atlasReactorReplaysDesktop
         public Form1()
         {
             InitializeComponent();
-            this.label1.Text = Properties.Settings.Default.path;
-            populateReplays(this.label1.Text, this.listBox1);
-            this.button2.Enabled = false;
+            this.filePath.Text = Properties.Settings.Default.path;
+            populateReplays(this.filePath.Text, this.replayList);
+            this.playButton.Enabled = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
             {
-                this.label1.Text = folderBrowserDialog1.SelectedPath;
-                Properties.Settings.Default.path = this.label1.Text;
+                this.filePath.Text = folderBrowserDialog1.SelectedPath;
+                Properties.Settings.Default.path = this.filePath.Text;
                 Properties.Settings.Default.Save();
+                populateReplays(this.filePath.Text, this.replayList);
             }
         }
 
         public static void populateReplays(string targetDirectory, ListBox list)
         {
+            list.Items.Clear();
             string[] fileEntries = Directory.GetFiles(targetDirectory);
             foreach (string fileName in fileEntries.Reverse())
             {
@@ -62,22 +64,22 @@ namespace atlasReactorReplaysDesktop
             string replayText = System.IO.File.ReadAllText(@Properties.Settings.Default.path + "\\" + listBox1.SelectedItem.ToString());
             MessageBox.Show(replayText);
             */
-            using (StreamReader sr = new StreamReader(Properties.Settings.Default.path + "\\" + listBox1.SelectedItem.ToString()))
+            using (StreamReader sr = new StreamReader(Properties.Settings.Default.path + "\\" + replayList.SelectedItem.ToString()))
             {
                 // Read the stream to a string, and write the string to the console.
                 String replayText = sr.ReadToEnd();
                 dynamic JSON = JsonConvert.DeserializeObject(replayText);
                 dynamic JSONgameConfig = JsonConvert.DeserializeObject((String)JSON.m_gameInfo_Serialized);
-                this.textBox1.Text = JSONgameConfig.GameConfig.Map;
+                this.mapInfo.Text = JSONgameConfig.GameConfig.Map;
                 //enable play button
-                this.button2.Enabled = true;
+                this.playButton.Enabled = true;
             }
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string replay = listBox1.SelectedItem.ToString();
+            string replay = replayList.SelectedItem.ToString();
             IntPtr calculatorHandle = FindWindow("UnityWndClass", "Atlas Reactor");
             if (calculatorHandle != (IntPtr) 0)
             {

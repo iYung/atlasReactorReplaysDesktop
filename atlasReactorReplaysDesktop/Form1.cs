@@ -31,6 +31,7 @@ namespace atlasReactorReplaysDesktop
             InitializeComponent();
             this.label1.Text = Properties.Settings.Default.path;
             populateReplays(this.label1.Text, this.listBox1);
+            this.button2.Enabled = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -68,9 +69,14 @@ namespace atlasReactorReplaysDesktop
                 dynamic JSON = JsonConvert.DeserializeObject(replayText);
                 dynamic JSONgameConfig = JsonConvert.DeserializeObject((String)JSON.m_gameInfo_Serialized);
                 this.textBox1.Text = JSONgameConfig.GameConfig.Map;
+                //enable play button
+                this.button2.Enabled = true;
             }
 
-            /*
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
             string replay = listBox1.SelectedItem.ToString();
             IntPtr calculatorHandle = FindWindow("UnityWndClass", "Atlas Reactor");
             if (calculatorHandle != (IntPtr) 0)
@@ -86,7 +92,6 @@ namespace atlasReactorReplaysDesktop
             {
                 MessageBox.Show("Please launch Atlas Reactor!");
             }
-            */
         }
     }
 }

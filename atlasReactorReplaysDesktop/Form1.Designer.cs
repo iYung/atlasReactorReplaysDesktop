@@ -40,22 +40,22 @@
             this.mapLabel = new System.Windows.Forms.Label();
             this.playButton = new System.Windows.Forms.Button();
             this.team1Label = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.char0 = new System.Windows.Forms.TextBox();
+            this.name0 = new System.Windows.Forms.TextBox();
+            this.name1 = new System.Windows.Forms.TextBox();
+            this.char1 = new System.Windows.Forms.TextBox();
+            this.name2 = new System.Windows.Forms.TextBox();
+            this.char2 = new System.Windows.Forms.TextBox();
+            this.name3 = new System.Windows.Forms.TextBox();
+            this.char3 = new System.Windows.Forms.TextBox();
+            this.name7 = new System.Windows.Forms.TextBox();
+            this.char7 = new System.Windows.Forms.TextBox();
+            this.name6 = new System.Windows.Forms.TextBox();
+            this.char6 = new System.Windows.Forms.TextBox();
+            this.name5 = new System.Windows.Forms.TextBox();
+            this.char5 = new System.Windows.Forms.TextBox();
+            this.name4 = new System.Windows.Forms.TextBox();
+            this.char4 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.patchLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
@@ -156,133 +156,133 @@
             this.team1Label.TabIndex = 10;
             this.team1Label.Text = "Team 1:";
             // 
-            // textBox1
+            // char0
             // 
-            this.textBox1.Location = new System.Drawing.Point(489, 164);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 11;
+            this.char0.Location = new System.Drawing.Point(489, 164);
+            this.char0.Name = "char0";
+            this.char0.ReadOnly = true;
+            this.char0.Size = new System.Drawing.Size(100, 20);
+            this.char0.TabIndex = 11;
             // 
-            // textBox2
+            // name0
             // 
-            this.textBox2.Location = new System.Drawing.Point(595, 164);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(150, 20);
-            this.textBox2.TabIndex = 12;
+            this.name0.Location = new System.Drawing.Point(595, 164);
+            this.name0.Name = "name0";
+            this.name0.ReadOnly = true;
+            this.name0.Size = new System.Drawing.Size(150, 20);
+            this.name0.TabIndex = 12;
             // 
-            // textBox3
+            // name1
             // 
-            this.textBox3.Location = new System.Drawing.Point(595, 190);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(150, 20);
-            this.textBox3.TabIndex = 14;
+            this.name1.Location = new System.Drawing.Point(595, 190);
+            this.name1.Name = "name1";
+            this.name1.ReadOnly = true;
+            this.name1.Size = new System.Drawing.Size(150, 20);
+            this.name1.TabIndex = 14;
             // 
-            // textBox4
+            // char1
             // 
-            this.textBox4.Location = new System.Drawing.Point(489, 190);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 13;
+            this.char1.Location = new System.Drawing.Point(489, 190);
+            this.char1.Name = "char1";
+            this.char1.ReadOnly = true;
+            this.char1.Size = new System.Drawing.Size(100, 20);
+            this.char1.TabIndex = 13;
             // 
-            // textBox5
+            // name2
             // 
-            this.textBox5.Location = new System.Drawing.Point(595, 216);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(150, 20);
-            this.textBox5.TabIndex = 16;
+            this.name2.Location = new System.Drawing.Point(595, 216);
+            this.name2.Name = "name2";
+            this.name2.ReadOnly = true;
+            this.name2.Size = new System.Drawing.Size(150, 20);
+            this.name2.TabIndex = 16;
             // 
-            // textBox6
+            // char2
             // 
-            this.textBox6.Location = new System.Drawing.Point(489, 216);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 15;
+            this.char2.Location = new System.Drawing.Point(489, 216);
+            this.char2.Name = "char2";
+            this.char2.ReadOnly = true;
+            this.char2.Size = new System.Drawing.Size(100, 20);
+            this.char2.TabIndex = 15;
             // 
-            // textBox7
+            // name3
             // 
-            this.textBox7.Location = new System.Drawing.Point(595, 242);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(150, 20);
-            this.textBox7.TabIndex = 18;
+            this.name3.Location = new System.Drawing.Point(595, 242);
+            this.name3.Name = "name3";
+            this.name3.ReadOnly = true;
+            this.name3.Size = new System.Drawing.Size(150, 20);
+            this.name3.TabIndex = 18;
             // 
-            // textBox8
+            // char3
             // 
-            this.textBox8.Location = new System.Drawing.Point(489, 242);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 17;
+            this.char3.Location = new System.Drawing.Point(489, 242);
+            this.char3.Name = "char3";
+            this.char3.ReadOnly = true;
+            this.char3.Size = new System.Drawing.Size(100, 20);
+            this.char3.TabIndex = 17;
             // 
-            // textBox9
+            // name7
             // 
-            this.textBox9.Location = new System.Drawing.Point(595, 359);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(150, 20);
-            this.textBox9.TabIndex = 27;
+            this.name7.Location = new System.Drawing.Point(595, 359);
+            this.name7.Name = "name7";
+            this.name7.ReadOnly = true;
+            this.name7.Size = new System.Drawing.Size(150, 20);
+            this.name7.TabIndex = 27;
             // 
-            // textBox10
+            // char7
             // 
-            this.textBox10.Location = new System.Drawing.Point(489, 359);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 26;
+            this.char7.Location = new System.Drawing.Point(489, 359);
+            this.char7.Name = "char7";
+            this.char7.ReadOnly = true;
+            this.char7.Size = new System.Drawing.Size(100, 20);
+            this.char7.TabIndex = 26;
             // 
-            // textBox11
+            // name6
             // 
-            this.textBox11.Location = new System.Drawing.Point(595, 333);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(150, 20);
-            this.textBox11.TabIndex = 25;
+            this.name6.Location = new System.Drawing.Point(595, 333);
+            this.name6.Name = "name6";
+            this.name6.ReadOnly = true;
+            this.name6.Size = new System.Drawing.Size(150, 20);
+            this.name6.TabIndex = 25;
             // 
-            // textBox12
+            // char6
             // 
-            this.textBox12.Location = new System.Drawing.Point(489, 333);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.ReadOnly = true;
-            this.textBox12.Size = new System.Drawing.Size(100, 20);
-            this.textBox12.TabIndex = 24;
+            this.char6.Location = new System.Drawing.Point(489, 333);
+            this.char6.Name = "char6";
+            this.char6.ReadOnly = true;
+            this.char6.Size = new System.Drawing.Size(100, 20);
+            this.char6.TabIndex = 24;
             // 
-            // textBox13
+            // name5
             // 
-            this.textBox13.Location = new System.Drawing.Point(595, 307);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.ReadOnly = true;
-            this.textBox13.Size = new System.Drawing.Size(150, 20);
-            this.textBox13.TabIndex = 23;
+            this.name5.Location = new System.Drawing.Point(595, 307);
+            this.name5.Name = "name5";
+            this.name5.ReadOnly = true;
+            this.name5.Size = new System.Drawing.Size(150, 20);
+            this.name5.TabIndex = 23;
             // 
-            // textBox14
+            // char5
             // 
-            this.textBox14.Location = new System.Drawing.Point(489, 307);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.ReadOnly = true;
-            this.textBox14.Size = new System.Drawing.Size(100, 20);
-            this.textBox14.TabIndex = 22;
+            this.char5.Location = new System.Drawing.Point(489, 307);
+            this.char5.Name = "char5";
+            this.char5.ReadOnly = true;
+            this.char5.Size = new System.Drawing.Size(100, 20);
+            this.char5.TabIndex = 22;
             // 
-            // textBox15
+            // name4
             // 
-            this.textBox15.Location = new System.Drawing.Point(595, 281);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.ReadOnly = true;
-            this.textBox15.Size = new System.Drawing.Size(150, 20);
-            this.textBox15.TabIndex = 21;
+            this.name4.Location = new System.Drawing.Point(595, 281);
+            this.name4.Name = "name4";
+            this.name4.ReadOnly = true;
+            this.name4.Size = new System.Drawing.Size(150, 20);
+            this.name4.TabIndex = 21;
             // 
-            // textBox16
+            // char4
             // 
-            this.textBox16.Location = new System.Drawing.Point(489, 281);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.ReadOnly = true;
-            this.textBox16.Size = new System.Drawing.Size(100, 20);
-            this.textBox16.TabIndex = 20;
+            this.char4.Location = new System.Drawing.Point(489, 281);
+            this.char4.Name = "char4";
+            this.char4.ReadOnly = true;
+            this.char4.Size = new System.Drawing.Size(100, 20);
+            this.char4.TabIndex = 20;
             // 
             // label1
             // 
@@ -296,11 +296,11 @@
             // patchLabel
             // 
             this.patchLabel.AutoSize = true;
-            this.patchLabel.Location = new System.Drawing.Point(674, 9);
+            this.patchLabel.Location = new System.Drawing.Point(608, 9);
             this.patchLabel.Name = "patchLabel";
-            this.patchLabel.Size = new System.Drawing.Size(71, 13);
+            this.patchLabel.Size = new System.Drawing.Size(137, 13);
             this.patchLabel.TabIndex = 28;
-            this.patchLabel.Text = "Current patch";
+            this.patchLabel.Text = "Up to date with: 11/7/2017";
             // 
             // Form1
             // 
@@ -308,23 +308,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(757, 427);
             this.Controls.Add(this.patchLabel);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox16);
+            this.Controls.Add(this.name7);
+            this.Controls.Add(this.char7);
+            this.Controls.Add(this.name6);
+            this.Controls.Add(this.char6);
+            this.Controls.Add(this.name5);
+            this.Controls.Add(this.char5);
+            this.Controls.Add(this.name4);
+            this.Controls.Add(this.char4);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.name3);
+            this.Controls.Add(this.char3);
+            this.Controls.Add(this.name2);
+            this.Controls.Add(this.char2);
+            this.Controls.Add(this.name1);
+            this.Controls.Add(this.char1);
+            this.Controls.Add(this.name0);
+            this.Controls.Add(this.char0);
             this.Controls.Add(this.team1Label);
             this.Controls.Add(this.playButton);
             this.Controls.Add(this.mapLabel);
@@ -335,6 +335,7 @@
             this.Controls.Add(this.title);
             this.Controls.Add(this.filePath);
             this.Controls.Add(this.uploadButton);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -357,22 +358,22 @@
         private System.Windows.Forms.Label mapLabel;
         private System.Windows.Forms.Button playButton;
         private System.Windows.Forms.Label team1Label;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox char0;
+        private System.Windows.Forms.TextBox name0;
+        private System.Windows.Forms.TextBox name1;
+        private System.Windows.Forms.TextBox char1;
+        private System.Windows.Forms.TextBox name2;
+        private System.Windows.Forms.TextBox char2;
+        private System.Windows.Forms.TextBox name3;
+        private System.Windows.Forms.TextBox char3;
+        private System.Windows.Forms.TextBox name7;
+        private System.Windows.Forms.TextBox char7;
+        private System.Windows.Forms.TextBox name6;
+        private System.Windows.Forms.TextBox char6;
+        private System.Windows.Forms.TextBox name5;
+        private System.Windows.Forms.TextBox char5;
+        private System.Windows.Forms.TextBox name4;
+        private System.Windows.Forms.TextBox char4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label patchLabel;
     }

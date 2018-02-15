@@ -25,7 +25,7 @@ namespace atlasReactorReplaysDesktop.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Select your replays folder")]
         public string path {
             get {
                 return ((string)(this["path"]));

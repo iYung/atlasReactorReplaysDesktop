@@ -16,8 +16,8 @@ namespace atlasReactorReplaysDesktop
 {
     public partial class Form1 : Form
     {
-        private TextBox[] nameArray, charArray;
-        private string[] charNames = new string[] { "", "Asana", "Zuki", "Aurora", "Gremolitions", "Helio", "Rask", "PuP", "Lockwood", "Nix", "Garrison", "Quark", "Kaigin", "Celeste", "Grey", "Oz", "", "Rampart", "Titus", "Elle", "Dr. Finn", "Juno", "Blackburn", "Orion", "Su-Ren", "", "Phaedra", "Brynn", "Khita", "", "", "Tol-Ren", "", "Meridian", "Nev3", "Isadora", "", "Magnus"};
+        private TextBox[] nameArray, charArray = null;
+        private string[] charNames = new string[39] { "", "Asana", "Zuki", "Aurora", "Gremolitions", "Helio", "Rask", "PuP", "Lockwood", "Nix", "Garrison", "Quark", "Kaigin", "Celeste", "Grey", "Oz", "", "Rampart", "Titus", "Elle", "Dr. Finn", "Juno", "Blackburn", "Orion", "Su-Ren", "", "Phaedra", "Brynn", "Khita", "", "", "Tol-Ren", "", "Meridian", "Nev3", "Isadora", "", "Magnus","Vonn"};
         
         // Get a handle to an application window.
         [DllImport("USER32.DLL", CharSet = CharSet.Unicode)]
@@ -32,10 +32,13 @@ namespace atlasReactorReplaysDesktop
         {
             InitializeComponent();
             this.filePath.Text = Properties.Settings.Default.path;
-            populateReplays(this.filePath.Text, this.replayList);
+            if (Properties.Settings.Default.path != "Select your replays folder")
+            {
+                populateReplays(this.filePath.Text, this.replayList);
+            }
             this.playButton.Enabled = false;
-            nameArray = new TextBox[] {this.name0, this.name1, this.name2, this.name3, this.name4, this.name5, this.name6, this.name7 };
-            charArray = new TextBox[] { this.char0, this.char1, this.char2, this.char3, this.char4, this.char5, this.char6, this.char7 };
+            nameArray = new TextBox[8] {this.name0, this.name1, this.name2, this.name3, this.name4, this.name5, this.name6, this.name7 };
+            charArray = new TextBox[8] { this.char0, this.char1, this.char2, this.char3, this.char4, this.char5, this.char6, this.char7 };
         }
 
         private void button1_Click(object sender, EventArgs e)
